@@ -1,0 +1,46 @@
+body {
+    background-color: azure;
+    padding: 2em;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background-color: #e2e2e2;
+    box-shadow: 3px 3px 6px #33333344;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    font-size: large;
+}
+
+#sort-list {
+    list-style-type: none;
+    padding-left: .5em;
+}
+
+.sortedListElement {
+    display: inline;
+    font-size: large;
+}
+
+button {
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: lightcoral;
+    border: .5px black solid;
+    border-radius: 5px;
+    display: inline;
+}
+
+.deleteButton:hover {
+    opacity: 75%;
+}
