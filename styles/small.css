@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    margin: 0;
+    max-width: 100%;
+    border-radius: 0;
+    height: 100%;
+    background-color: #e2e2e2;
+    padding: 2em;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: x-large;
+}
+
+.logo {
+    position: unset;
+    right: 2em;
+    top: 1em;
+    width: 75px;
+}
+
+#list-feature {
+    background-color: azure;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#sort-list {
+    list-style-type: none;
+    padding-left: .5em;
+}
+
+.sortedListElement {
+    display: inline;
+    font-size: large;
+}
+
+button {
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: lightcoral;
+    border: .5px black solid;
+    border-radius: 5px;
+    display: inline;
+}
+
+.deleteButton:hover {
+    opacity: 75%;
+}
+
+#NewItem, #addButton {
+    height: 40px;
+    border: 1px solid gray;
+}
+
+#NewItem {
+    font-size: 30px;
+    width: 200px;
+    padding: 0;
+}
+
+#addButton {
+    position: fixed;
+    margin-left: 5px;
+    border-radius: .5em;
+}
+
+#addButton:hover {
+    opacity: 75%;
+}

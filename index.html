@@ -4,18 +4,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="icon" type="image/png" href="images/logo-upper.png">
         <title>Sort Alphabetically</title>
     </head>
 
     <body>
         <main>
+            <img src="images/logo-upper.png" alt="abc logo" class="logo">
             <h1>Sort Alphabetically</h1>
-            <p>Sorted List:</p>
-            <ul id="sort-list"></ul>
-            <label for="NewItem" hidden>Add a New Item</label>
-            <input type="text" id="NewItem">
-            <button id="addButton">Add</button>
+            <div id="list-feature">
+                <p>Sorted List:</p>
+                <ul id="sort-list"></ul>
+                <label for="NewItem" hidden>Add a New Item</label>
+                <input type="text" id="NewItem">
+                <button id="addButton">Add</button>
+
+            </div>
             <script src="index.js"></script>
         </main>
     </body>
