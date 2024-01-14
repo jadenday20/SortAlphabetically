@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sort Alphabetically</title>
+    </head>
+
+    <body>
+        <h1>Sort Alphabetically</h1>
+        <p>Sorted List:</p>
+        <ul id="sort-list"></ul>
+        <input type="text" id="NewItem">
+        <script>
+            var sortedList = []
+            // list.sort()
+            let listTag = document.getElementById("sort-list")
+
+            let input = document.getElementById("NewItem")
+            input.addEventListener("keypress", function (event) {
+                // If the user presses the "Enter" key on the keyboard
+                if (event.key === "Enter" && input.value != "") {
+                    listTag.innerHTML = "";
+                    sortedList.push(input.value)
+                    sortedList.sort()
+                    input.value = null
+                    for (i = 0; i < sortedList.length; i++) {
+                        addNewItem(listTag, sortedList[i])
+                    }
+                }
+            });
+
+            function addNewItem(list, newItem) {
+                let listElement = document.createElement("li");
+                listElement.textContent = newItem;
+                list.appendChild(listElement)
+            }
+        </script>
+    </body>
+
+</html>
