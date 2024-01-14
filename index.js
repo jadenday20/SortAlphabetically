@@ -20,7 +20,14 @@ addButton.addEventListener("click", function () {
     //reset the list element
     listTag.innerHTML = "";
     //add the new item to the array
-    sortedList.push(input.value);
+    if (input.value.includes(",") || input.value.includes("\n")) {
+      let splitInput = input.value.split(",");
+      for (i = 0; i < splitInput.length; i++) {
+        sortedList.push(splitInput[i]);
+      }
+    } else {
+      sortedList.push(input.value);
+    }
     //sort the list
     sortedList.sort();
     //reset the input field so the user can enter something else
